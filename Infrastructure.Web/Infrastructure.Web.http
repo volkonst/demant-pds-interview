@@ -1,0 +1,23 @@
+﻿@Infrastructure.Web_HostAddress = http://localhost:50000
+
+POST {{Infrastructure.Web_HostAddress}}/games
+Content-Type: application/json
+
+{
+  "name":"game1"
+}
+###
+
+GET {{Infrastructure.Web_HostAddress}}/games
+
+###
+
+DELETE {{Infrastructure.Web_HostAddress}}/games/game1
+###
+
+POST {{Infrastructure.Web_HostAddress}}/borrow-game/game1?user=kovo&days=2
+###
+
+POST {{Infrastructure.Web_HostAddress}}/return-game/game1
+
+###

@@ -21,3 +21,7 @@ POST {{Infrastructure.Web_HostAddress}}/borrow-game/game1?user=kovo&days=2
 POST {{Infrastructure.Web_HostAddress}}/return-game/game1
 
 ###
+
+GET {{Infrastructure.Web_HostAddress}}/games
+
+###
